@@ -35,7 +35,7 @@ public class FriendsResource implements FriendsApi {
             return Response.status(Status.CONFLICT).build();
         }
         friends.add(entity);
-        return Response.ok(friends).build();    
+        return Response.ok(entity).build();    
     }
 
     @Override
