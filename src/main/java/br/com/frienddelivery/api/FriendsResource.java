@@ -7,6 +7,8 @@ import javax.ws.rs.core.Response;
 import javax.ws.rs.core.Response.Status;
 
 import br.com.frienddelivery.api.contract.FriendsApi;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 import okhttp3.ResponseBody;
 
 import java.io.ObjectInputFilter.FilterInfo;
@@ -68,6 +70,8 @@ public class FriendsResource implements FriendsApi {
         return Response.ok(friends).build();
     }
 
+    @AllArgsConstructor
+    @NoArgsConstructor
     public static class Friend {
         public String name;
         public String email;
@@ -76,19 +80,5 @@ public class FriendsResource implements FriendsApi {
         public String address;
         public List<String> preferences;
         public List<String> cant_be;
-
-        public Friend() {
-        }
-
-        public Friend(String name, String email, String phone, String slack_id, String address,
-                List<String> preferences, List<String> cant_be) {
-            this.name = name;
-            this.email = email;
-            this.phone = phone;
-            this.slack_id = slack_id;
-            this.address = address;
-            this.preferences = preferences;
-            this.cant_be = cant_be;
-        }
     }
 }
