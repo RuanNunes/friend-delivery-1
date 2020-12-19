@@ -1,4 +1,4 @@
-package br.com.frienddelivery.resteasyjackson;
+package br.com.frienddelivery.api;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
