@@ -18,7 +18,6 @@ import org.eclipse.microprofile.openapi.annotations.media.Schema;
 import org.eclipse.microprofile.openapi.annotations.responses.APIResponse;
 import org.eclipse.microprofile.openapi.annotations.tags.Tag;
 import br.com.frienddelivery.api.FriendsResource.Friend;
-
 /**
  * @author: Ruan Nunes
  * @version: 1.0 19/12/20
@@ -28,7 +27,7 @@ import br.com.frienddelivery.api.FriendsResource.Friend;
 @Consumes(MediaType.APPLICATION_JSON)
 @Tag(name = "Friends Api", description = "Operations on resources Friends.")
 public interface FriendsApi {
-  
+
     @GET
     @Operation(summary = "Get all Friends")
     public Set<Friend> get();
@@ -68,5 +67,4 @@ public interface FriendsApi {
     @APIResponse(responseCode = "404", description = "friend not found")
     @Operation(summary = "Delete friend by name")
     public Response delete(@PathParam("name") String name);
-
 }
