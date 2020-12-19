@@ -38,7 +38,7 @@ public class FriendsResource {
 
     @DELETE
     public Set<Friend> delete(Friend friend) {
-        friends.removeIf(existingQuark -> existingQuark.name.contentEquals(friend.name));
+        friends.removeIf(existingFriend -> existingFriend.name.contentEquals(friend.name));
         return friends;
     }
 

@@ -9,8 +9,13 @@ If you want to learn more about Quarkus, please visit its website: https://quark
 You can run your application in dev mode that enables live coding using:
 ```shell script
 ./mvnw compile quarkus:dev
+
 ```
 
+### -> after going up in dev mode to access the doc just click [here](http://localhost:8080/swagger-ui/)
+
+---
+---
 ## Packaging and running the application
 
 The application can be packaged using:
