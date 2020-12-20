@@ -3,3 +3,12 @@ display:
   unit:
     name: "mph"
     factor: 4.23432
+
+quarkus:
+  cassandra:
+    contact-points: localhost:9042
+    local-datacenter: friend-delivery
+    keyspace: keyspace_friend_delivery
+    auth:
+      username: cassandra
+      password: 123
