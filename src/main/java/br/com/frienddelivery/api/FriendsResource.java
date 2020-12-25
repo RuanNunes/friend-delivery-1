@@ -34,7 +34,6 @@ public class FriendsResource implements FriendsApi {
         if(Objects.nonNull(findByName(entity.name))){
             return Response.status(Status.CONFLICT).build();
         }
-        entity.address = "teste";
         friends.add(entity);
         return Response.ok(entity).build();    
     }
